@@ -1,0 +1,5 @@
+Data used:
+
+Foursquare API location data for New York and Toronto.
+Firstly the Foursquare data will be used to compare the most common venue categories in each city and the clustered into groups.
+Secondly the Foursquare data will be used to explore the location of Italian restaurants in New York city. These will the inform the restaurant owner of the best location.
