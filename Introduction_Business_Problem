@@ -1,0 +1,12 @@
+Introduction/Business Problem:
+
+Question 1
+Objective: compare the neighbourhoods of New York and Toronto and determine how similar or dissimilar they are.
+Using the Foursquare API I will explore the most common venue categories in each neighbourhood and then use this feature to group the neighbourhoods into clusters – using K means. After which I will use the Folium library to visualise the neighbourhoods in both New York and Toronto along with their emerging clusters.
+
+Question 2
+Objective: A restaurant owner is looking to open a new Italian restaurant in New York, the objective is to recommend the best location to open the venue.
+Target audience: customers of the Italian restaurant
+Stakeholders: restaurant owner
+Using the Foursquare API I will explore the Italian restaurants in each neighbourhood and then use this feature to group the restaurants into clusters – using K means. After which I will use the Folium library to visualise the restaurants in New York along with their emerging clusters.
+The distribution of Italian restaurants will help the restaurant owner determine the best location to open the new venue.
