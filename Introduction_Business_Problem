@@ -1,20 +1,18 @@
-The final submission for the capstone project can be split into two seperate questions.
+Introduction
 
-# Question 1 - Toronto & Ottawa
-Objective: to compare the neighbourhoods of Toronto and Ottawa and determine how similar or dissimilar they are. This will inform a project currently being worked by the Government of Canada.
+a.	BACKGROUND
+The final assessment set by the Coursera Applied Data Science Capstone centres around leveraging Foursquare location data to explore and compare neighbourhoods or cities of my choice; and to come up with and solve a problem using Foursquare location data.
 
-Target audience: Analysts within the Government of Canada
-Stakeholders: Government of Canada
+b.	PROBLEM
+The task can be split into two sections: neighbourhood/city comparison, and problem solving hereafter named Question 1 and Question 2 respectively.
 
+Question 1 objective: To compare the neighbourhoods of Downtown Toronto and Ottawa and determine how similar or dissimilar they are.
 Using the Foursquare API I will explore the most common venue categories in Downtown Toronto and Ottawa, then use this feature to group the neighbourhoods into clusters – using K means. After which I will use the Folium library to visualise the neighbourhoods in both Toronto and Ottawa along with their emerging venue clusters. This information will benefit the Government of Canada as they are attempting to establish the diversity of venue types in these locations.
 
+Question 2 objective: A restaurant owner is looking to open a new Italian restaurant in Toronto, the objective is to recommend the best location.
+Using the Foursquare API I will explore the Italian restaurants in each neighbourhood in Toronto. After which I will use the Folium library to visualise the restaurants to inform the owner of the current distribution. The spatial distribution is highly important from a competition point of view as an area highly saturated in italian cuisine will prove detrimental to their business. Therefore, the owner will be looking for an area that has none/few Italian restaurants at present.
 
-
-# Question 2 - Italian Restaurants in Toronto
-Objective: A restaurant owner is looking to open a new Italian restaurant in Toronto, the objective is to recommend the best location to open the venue.
-
-Target audience: restaurant owner
-Stakeholders: the bank (who is lending the restaurant owner the money to open the restaurant)
-
-Using the Foursquare API I will explore the Italian restaurants in each neighbourhood in Toronto. After which I will use the Folium library to visualise the restaurants in order to inform the owner of the current distribution. The spatial distribution is highly important from a competition point of view as an area highly saturated in italian cusinine will prove detremental to their business.
-Therefore the owner will be looking for an area that has none/few italian restaurants at present.
+c.	INTEREST
+As mentioned in the problem section of this report the interest can also be split into two sections.
+Question 1 interest: The target audience of this analysis are the analysts within the Government of Canada. The stakeholders are the wider Government of Canada.
+Question 2 interest: The target audience is the restaurant owner. The stakeholders are the bank – who are lending the owner the money to build his new restaurant.
