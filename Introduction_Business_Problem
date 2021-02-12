@@ -1,12 +1,20 @@
-Introduction/Business Problem:
+The final submission for the capstone project can be split into two seperate questions.
 
-Question 1
-Objective: compare the neighbourhoods of New York and Toronto and determine how similar or dissimilar they are.
-Using the Foursquare API I will explore the most common venue categories in each neighbourhood and then use this feature to group the neighbourhoods into clusters – using K means. After which I will use the Folium library to visualise the neighbourhoods in both New York and Toronto along with their emerging clusters.
+# Question 1 - Toronto & Ottawa
+Objective: to compare the neighbourhoods of Toronto and Ottawa and determine how similar or dissimilar they are. This will inform a project currently being worked by the Government of Canada.
 
-Question 2
-Objective: A restaurant owner is looking to open a new Italian restaurant in New York, the objective is to recommend the best location to open the venue.
-Target audience: customers of the Italian restaurant
-Stakeholders: restaurant owner
-Using the Foursquare API I will explore the Italian restaurants in each neighbourhood and then use this feature to group the restaurants into clusters – using K means. After which I will use the Folium library to visualise the restaurants in New York along with their emerging clusters.
-The distribution of Italian restaurants will help the restaurant owner determine the best location to open the new venue.
+Target audience: Analysts within the Government of Canada
+Stakeholders: Government of Canada
+
+Using the Foursquare API I will explore the most common venue categories in Downtown Toronto and Ottawa, then use this feature to group the neighbourhoods into clusters – using K means. After which I will use the Folium library to visualise the neighbourhoods in both Toronto and Ottawa along with their emerging venue clusters. This information will benefit the Government of Canada as they are attempting to establish the diversity of venue types in these locations.
+
+
+
+# Question 2 - Italian Restaurants in Toronto
+Objective: A restaurant owner is looking to open a new Italian restaurant in Toronto, the objective is to recommend the best location to open the venue.
+
+Target audience: restaurant owner
+Stakeholders: the bank (who is lending the restaurant owner the money to open the restaurant)
+
+Using the Foursquare API I will explore the Italian restaurants in each neighbourhood in Toronto. After which I will use the Folium library to visualise the restaurants in order to inform the owner of the current distribution. The spatial distribution is highly important from a competition point of view as an area highly saturated in italian cusinine will prove detremental to their business.
+Therefore the owner will be looking for an area that has none/few italian restaurants at present.
