@@ -1,5 +1,19 @@
 Data used:
+ 
+# Question 1 - Toronto & Ottawa
+Objective: to compare the neighbourhoods of Toronto and Ottawa and determine how similar or dissimilar they are. This will inform a project currently being worked by the Government of Canada.
 
-Foursquare API location data for New York and Toronto.
-Firstly the Foursquare data will be used to compare the most common venue categories in each city and the clustered into groups.
-Secondly the Foursquare data will be used to explore the location of Italian restaurants in New York city. These will the inform the restaurant owner of the best location.
+Data used - 
+wiki table of Toronto: containing postal code, borough, neighborhood data
+csv of ottawa geospatial data - containing postal code, city, neighborhoog, lat and long.
+geospatial coordinates of toronto - containing lat, long data
+Foursquare API location data for venues in toronto and ottawa - including venue lat, long, category and name
+
+
+# Question 2 - Italian Restaurants in Toronto
+Objective: A restaurant owner is looking to open a new Italian restaurant in Toronto, the objective is to recommend the best location to open the venue.
+
+Data used - 
+wiki table of Toronto: containing postal code, borough, neighborhood data
+geospatial coordinates of toronto - containing lat, long data
+Foursquare API location data for italian restaurants in Toronto - including name, address, lat, long, distance, postal code, city, state,neighborhood 
