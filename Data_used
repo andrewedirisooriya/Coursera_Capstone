@@ -1,19 +1,26 @@
-Data used:
- 
-# Question 1 - Toronto & Ottawa
-Objective: to compare the neighbourhoods of Toronto and Ottawa and determine how similar or dissimilar they are. This will inform a project currently being worked by the Government of Canada.
+Data acquisition and cleaning
 
-Data used - 
-wiki table of Toronto: containing postal code, borough, neighborhood data
-csv of ottawa geospatial data - containing postal code, city, neighborhoog, lat and long.
-geospatial coordinates of toronto - containing lat, long data
-Foursquare API location data for venues in toronto and ottawa - including venue lat, long, category and name
+The task can be split into two sections: neighbourhood/city comparison, and problem solving hereafter named Question 1 and Question 2 respectively.
 
+a.	DATA SOURCES
 
-# Question 2 - Italian Restaurants in Toronto
-Objective: A restaurant owner is looking to open a new Italian restaurant in Toronto, the objective is to recommend the best location to open the venue.
+Question 1 data:
+Csv of Toronto location data containing postal codes, boroughs and neighbourhoods – from a previous assessment in the IBM Data Science Specialization
+Csv of Ottawa geospatial data containing postal codes, city, neighbourhood, latitude and longitude - https://github.com/ccnixon/postalcodes/blob/master/CanadianPostalCodes.csv
+Geospatial coordinates of Toronto containing latitude and longitude - from a previous assessment in the IBM Data Science Specialization
+Foursquare API location data for venues in Toronto and Ottawa – including venue latitude, longitude, category and name - https://api.foursquare.com/v2/ . Limit 100. Radius 500.
 
-Data used - 
-wiki table of Toronto: containing postal code, borough, neighborhood data
-geospatial coordinates of toronto - containing lat, long data
-Foursquare API location data for italian restaurants in Toronto - including name, address, lat, long, distance, postal code, city, state,neighborhood 
+Question 2 data:
+Csv of Toronto location data containing postal codes, boroughs and neighbourhoods - from a previous assessment in the IBM Data Science Specialization
+Geospatial coordinates or Toronto containing latitude and longitude - from a previous assessment in the IBM Data Science Specialization
+Foursquare API location data for italian restaurants in Toronto – including name, address, latitude, longitude, distance, postal code, city, state and neighbourhood - https://api.foursquare.com/v2/ . Limit 100. Radius 10000.
+
+b.	DATA CLEANING
+
+Question 1 data cleaning: within the data sources section of this report you can see the Toronto data is separated across two csv files. The process of data cleaning involved joining these sources and inputting them into the same pandas dataframe. After which all boroughs that contained the value “Not assigned” were dropped from the dataframe and filtered to the Downtown Toronto borough. The venue data from the Foursquare API was filtered to only include venue name, category, latitude, longitude in Toronto and Ottawa respectively. The Ottawa data required no cleaning.
+Question 2 data cleaning: as I was using the same Toronto data from question 1 no additional cleaning of the csv files was required. It is important to note that in this case the Toronto data was not limited to the Downtown borough. The Foursquare API data for this question was filtered to Toronto with an additional search query equal to italian.
+
+c.	FEATURE SELECTION
+
+Question 1 features: venues in Downtown Toronto and Ottawa respectively from the Foursquare API
+Question 2 features: Italian restaurants in Toronto from the Foursquare API 
